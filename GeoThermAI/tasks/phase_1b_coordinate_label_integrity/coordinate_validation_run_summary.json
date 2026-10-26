@@ -1,0 +1,34 @@
+{
+  "candidate_crs_discrepancy_summary": {
+    "EPSG:32646": {
+      "maximum_discrepancy_m": 635481.791,
+      "median_discrepancy_m": 628062.674,
+      "minimum_discrepancy_m": 626998.01,
+      "records_with_dms": 15
+    },
+    "EPSG:32647": {
+      "maximum_discrepancy_m": 1872.764,
+      "median_discrepancy_m": 0.372,
+      "minimum_discrepancy_m": 0.08,
+      "records_with_dms": 15
+    },
+    "EPSG:32648": {
+      "maximum_discrepancy_m": 635476.041,
+      "median_discrepancy_m": 628063.029,
+      "minimum_discrepancy_m": 626998.496,
+      "records_with_dms": 15
+    }
+  },
+  "input": "tasks/phase_1_data_acquisition_label_validation/northern_hot_spring_label_registry_wood2014.csv",
+  "output": "tasks/phase_1b_coordinate_label_integrity/validated_hot_spring_registry.csv",
+  "proj_version": "9.5.1",
+  "pyproj_version": "3.7.2",
+  "record_count": 16,
+  "records_over_1km_discrepancy": [
+    "CR_02"
+  ],
+  "records_without_dms": [
+    "CM_16"
+  ],
+  "selected_crs": "EPSG:32647"
+}

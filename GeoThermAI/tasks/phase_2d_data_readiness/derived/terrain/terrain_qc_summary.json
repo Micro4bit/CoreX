@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-10-26T08:12:34Z",
+  "source": "Mapzen Terrain Tiles AWS distribution; Thailand tiles contain SRTM elevations",
+  "sourceUrl": "https://registry.opendata.aws/terrain-tiles/",
+  "licenseAndAttribution": "SRTM public-domain status documented by distribution attribution; credit requested: SRTM data courtesy of the U.S. Geological Survey.",
+  "tileCount": 5,
+  "tiles": [
+    {
+      "tile": "N19E098",
+      "sourcePath": "tasks/phase_1_data_acquisition_label_validation/N19E098.hgt.gz",
+      "sourceSha256": "36cd0e41b88faaa76d00b58a16ff602f2ca634dcb305c78f0ab43d23ec15704e",
+      "compressedBytes": 16104565,
+      "dimensions": [
+        3601,
+        3601
+      ],
+      "sampleSpacingArcSeconds": 1,
+      "coordinateConvention": "Filename gives southwest 1-degree tile; 3601 x 3601 point posts include shared edges; rows north-to-south.",
+      "coverageBoundsWgs84": [
+        98,
+        19,
+        99,
+        20
+      ],
+      "geotiffPixelBoundsWgs84": [
+        97.99986111111112,
+        18.99986111111111,
+        99.0001388888889,
+        20.000138888888888
+      ],
+      "validSampleCount": 12967201,
+      "noDataCount": 0,
+      "minimumElevationM": 145,
+      "maximumElevationM": 2177,
+      "geotiffPath": "tasks/phase_2d_data_readiness/derived/terrain/N19E098.tif",
+      "geotiffBytes": 10040012
+    },
+    {
+      "tile": "N17E099",
+      "sourcePath": "tasks/phase_1c_label_expansion_gis_foundation/N17E099.hgt.gz",
+      "sourceSha256": "d676a4f5d23fb4095440dd434e31a17d695dc57c22679abf30fd4548d3b494ae",
+      "compressedBytes": 11700028,
+      "dimensions": [
+        3601,
+        3601
+      ],
+      "sampleSpacingArcSeconds": 1,
+      "coordinateConvention": "Filename gives southwest 1-degree tile; 3601 x 3601 point posts include shared edges; rows north-to-south.",
+      "coverageBoundsWgs84": [
+        99,
+        17,
+        100,
+        18
+      ],
+      "geotiffPixelBoundsWgs84": [
+        98.99986111111112,
+        16.99986111111111,
+        100.0001388888889,
+        18.000138888888888
+      ],
+      "validSampleCount": 12967201,
+      "noDataCount": 0,
+      "minimumElevationM": 20,
+      "maximumElevationM": 1377,
+      "geotiffPath": "tasks/phase_2d_data_readiness/derived/terrain/N17E099.tif",
+      "geotiffBytes": 7543948
+    },
+    {
+      "tile": "N18E099",
+      "sourcePath": "tasks/phase_1c_label_expansion_gis_foundation/N18E099.hgt.gz",
+      "sourceSha256": "4af4de6c56ebb19dcac0a70949f65b8f0483080a76cce19c8b94b840859cbcf5",
+      "compressedBytes": 13326865,
+      "dimensions": [
+        3601,
+        3601
+      ],
+      "sampleSpacingArcSeconds": 1,
+      "coordinateConvention": "Filename gives southwest 1-degree tile; 3601 x 3601 point posts include shared edges; rows north-to-south.",
+      "coverageBoundsWgs84": [
+        99,
+        18,
+        100,
+        19
+      ],
+      "geotiffPixelBoundsWgs84": [
+        98.99986111111112,
+        17.99986111111111,
+        100.0001388888889,
+        19.000138888888888
+      ],
+      "validSampleCount": 12967201,
+      "noDataCount": 0,
+      "minimumElevationM": 107,
+      "maximumElevationM": 1996,
+      "geotiffPath": "tasks/phase_2d_data_readiness/derived/terrain/N18E099.tif",
+      "geotiffBytes": 8409956
+    },
+    {
+      "tile": "N19E099",
+      "sourcePath": "tasks/phase_1c_label_expansion_gis_foundation/N19E099.hgt.gz",
+      "sourceSha256": "91225d049c587ce4f7534f169f0fdda2f0d7f1f61333d252732e74818893802c",
+      "compressedBytes": 14113631,
+      "dimensions": [
+        3601,
+        3601
+      ],
+      "sampleSpacingArcSeconds": 1,
+      "coordinateConvention": "Filename gives southwest 1-degree tile; 3601 x 3601 point posts include shared edges; rows north-to-south.",
+      "coverageBoundsWgs84": [
+        99,
+        19,
+        100,
+        20
+      ],
+      "geotiffPixelBoundsWgs84": [
+        98.99986111111112,
+        18.99986111111111,
+        100.0001388888889,
+        20.000138888888888
+      ],
+      "validSampleCount": 12967201,
+      "noDataCount": 0,
+      "minimumElevationM": 335,
+      "maximumElevationM": 2020,
+      "geotiffPath": "tasks/phase_2d_data_readiness/derived/terrain/N19E099.tif",
+      "geotiffBytes": 8778264
+    },
+    {
+      "tile": "N20E099",
+      "sourcePath": "tasks/phase_1c_label_expansion_gis_foundation/N20E099.hgt.gz",
+      "sourceSha256": "7e17979bea57235b906a356213197ecfb556f783d114b13621fcfefc2a90834a",
+      "compressedBytes": 15627218,
+      "dimensions": [
+        3601,
+        3601
+      ],
+      "sampleSpacingArcSeconds": 1,
+      "coordinateConvention": "Filename gives southwest 1-degree tile; 3601 x 3601 point posts include shared edges; rows north-to-south.",
+      "coverageBoundsWgs84": [
+        99,
+        20,
+        100,
+        21
+      ],
+      "geotiffPixelBoundsWgs84": [
+        98.99986111111112,
+        19.99986111111111,
+        100.0001388888889,
+        21.000138888888888
+      ],
+      "validSampleCount": 12967201,
+      "noDataCount": 0,
+      "minimumElevationM": 357,
+      "maximumElevationM": 2336,
+      "geotiffPath": "tasks/phase_2d_data_readiness/derived/terrain/N20E099.tif",
+      "geotiffBytes": 9661668
+    }
+  ],
+  "seamChecks": [
+    {
+      "tiles": [
+        "N17E099",
+        "N18E099"
+      ],
+      "edge": "north-south shared point posts",
+      "maximumAbsoluteDifferenceM": 0,
+      "nonMatchingPostCount": 0
+    },
+    {
+      "tiles": [
+        "N18E099",
+        "N19E099"
+      ],
+      "edge": "north-south shared point posts",
+      "maximumAbsoluteDifferenceM": 0,
+      "nonMatchingPostCount": 0
+    },
+    {
+      "tiles": [
+        "N19E099",
+        "N20E099"
+      ],
+      "edge": "north-south shared point posts",
+      "maximumAbsoluteDifferenceM": 0,
+      "nonMatchingPostCount": 0
+    },
+    {
+      "tiles": [
+        "N19E098",
+        "N19E099"
+      ],
+      "edge": "east-west shared point posts",
+      "maximumAbsoluteDifferenceM": 0,
+      "nonMatchingPostCount": 0
+    }
+  ],
+  "missingCoverage": "Only five one-degree tiles are present. This is not a complete northern-Thailand or national terrain mosaic; missing tiles are not extrapolated.",
+  "derivedProduct": "GeoTIFF copies preserve source elevations and add EPSG:4326 georeferencing; no slope/hillshade generated because spatial coverage remains incomplete.",
+  "scientificUse": "Elevation is a terrain variable, not proof of subsurface geothermal resources.",
+  "processingSeconds": 8.45563724997919
+}

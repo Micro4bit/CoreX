@@ -1,0 +1,4081 @@
+{
+ "currentVersion": 10.81,
+ "cimVersion": "2.6.0",
+ "id": 0,
+ "name": "หน่วยหิน 1:250,000",
+ "type": "Feature Layer",
+ "description": "",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 32647,
+  "latestWkid": 32647,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -5120900,
+  "falseY": -9998100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "COLOR_APP",
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       255,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0010-Qa",
+     "label": "Qa ตะกอนที่ราบลุ่มน้ำ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       255,
+       150,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0020-Qff",
+     "label": "Qff ตะกอนที่ราบน้ำท่วมถึง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       190,
+       230,
+       150,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0030-Ql",
+     "label": "Ql ตะกอนลากูน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       192,
+       255,
+       210,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0040-Qmc",
+     "label": "Qmc ตะกอนชายฝั่งทะเลโดยอิทธิพลของน้ำขึ้น"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       200,
+       225,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0050-Qms",
+     "label": "Qms ตะกอนชายฝั่งทะเลโดยอิทธิพลของน้ำขึ้นน้ำลง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       160,
+       255,
+       130,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0060-Qaf",
+     "label": "Qaf เนินตะกอนน้ำพารูปพัด"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       220,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0070-Qc",
+     "label": "Qc ตะกอนเศษหินเชิงเขา และตะกอนหินผุพัง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       255,
+       100,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0080-Qt",
+     "label": "Qt ตะกอนตะพักลำน้ำ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       235,
+       69,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0090-Tmm",
+     "label": "Tmm กลุ่มหินแม่เมาะ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       245,
+       33,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0100-Tkb",
+     "label": "Tkb กลุ่มหินแม่ทา"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSHorizontal",
+      "color": [
+       194,
+       235,
+       90,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0110-KTpk",
+     "label": "KTpk หมวดหินภูขัด"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSHorizontal",
+      "color": [
+       194,
+       235,
+       90,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0120-KTky",
+     "label": "KTky หมวดหินเขาย่าปุก"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       194,
+       235,
+       90,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0130-KTpt",
+     "label": "KTpt หมวดหินภูทอก"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       190,
+       45,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0140-KTms",
+     "label": "KTms หมวดหินมหาสารคาม"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       145,
+       215,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0160-Kkk",
+     "label": "Kkk หมวดหินโคกกรวด"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       90,
+       135,
+       135,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0170-Kpp",
+     "label": "Kpp หมวดหินภูพาน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       145,
+       215,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0180-Kp",
+     "label": "Kp หมวดหินพุนพิน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       190,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0190-Ksk",
+     "label": "Ksk หมวดหินเสาขัว"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       145,
+       215,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0200-K",
+     "label": "K"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       120,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0210-JK",
+     "label": "JK"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       200,
+       185,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0220-JKl",
+     "label": "JKl หมวดหินลำทับ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       171,
+       255,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0230-JKpw",
+     "label": "JKpw หมวดหินพระวิหาร"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       200,
+       185,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0240-Jk",
+     "label": "Jk หมวดหินคลองมีน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       120,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0250-Jpk",
+     "label": "Jpk หมวดหินภูกระดึง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       64,
+       100,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0260-Ju",
+     "label": "Ju หมวดหินอุ้งผาง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       150,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0270-J",
+     "label": "J"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       100,
+       101,
+       250,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0280-TrJ",
+     "label": "TrJ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       140,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "250K-0950-Trk",
+     "label": "Trk"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       172,
+       154,
+       200,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0290-Trnp",
+     "label": "Trnp หมวดหินน้ำพอง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       152,
+       165,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0300-Trhl",
+     "label": "Trhl หมวดหินห้วยหินลาด"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       142,
+       115,
+       210,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0310-Trpn",
+     "label": "Trpn หมวดหินโป่งน้ำร้อน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       170,
+       145,
+       199,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0320-Trn",
+     "label": "Trn หมวดหินเนินผู้ใหญ่เยื่อ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       152,
+       165,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0330-Trc",
+     "label": "Trc หมวดหินชัยบุรี"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       180,
+       150,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0340-Trwc",
+     "label": "Trwc หมวดหินวังชิ้น"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       153,
+       133,
+       212,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0350-Trkp",
+     "label": "Trkp หมวดหินก้างปลา"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       185,
+       186,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0360-Trpd",
+     "label": "Trpd หมวดหินผาแดง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       147,
+       130,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0370-Trdl",
+     "label": "Trdl หมวดหินดอยลอง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       140,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0380-Trhh",
+     "label": "Trhh หมวดหินฮ่องหอย"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       153,
+       133,
+       212,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0390-Trpk",
+     "label": "Trpk หมวดหินผาก้าน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       175,
+       133,
+       175,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0400-Trpt",
+     "label": "Trpt หมวดหินพระธาตุ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       140,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0401-Trl",
+     "label": "Trl"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       199,
+       140,
+       242,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0410-Tr2",
+     "label": "Tr2"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       227,
+       74,
+       242,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0420-Tr1",
+     "label": "Tr1"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       135,
+       65,
+       80,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0430-PTr",
+     "label": "PTr"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       242,
+       135,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0450-Pr-2",
+     "label": "Pr-2"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       253,
+       109,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0470-Pr",
+     "label": "Pr กลุ่มหินราชบุรี"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       165,
+       115,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0480-Ps-2",
+     "label": "Ps-2"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       120,
+       70,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0490-Ps-1",
+     "label": "Ps-1"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       120,
+       70,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0500-Ps",
+     "label": "Ps กลุ่มหินสระบุรี"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       168,
+       89,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0510-Png3",
+     "label": "Png3 หมวดหินห้วยทาก"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       253,
+       109,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0520-Png2",
+     "label": "Png2 หมวดหินผาหวด"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       247,
+       153,
+       89,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0560-Png1",
+     "label": "Png1 หมวดหินกิ่วลม"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       245,
+       89,
+       61,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0530-P3",
+     "label": "P3 หมวดหินผาเดื่อ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       253,
+       109,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0570-P2",
+     "label": "P2 หมวดหินอีเลิศ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       253,
+       109,
+       0,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0550-P1",
+     "label": "P1 หมวดหินน้ำมโหฬาร"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       200,
+       125,
+       20,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0540-CP",
+     "label": "CP"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       176,
+       176,
+       176,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0580-C2",
+     "label": "C2"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       125,
+       133,
+       133,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0590-C1",
+     "label": "C1"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       190,
+       118,
+       35,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0600-CPk-2",
+     "label": "CPk-2 หมวดหินเขาเจ้า"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       170,
+       110,
+       55,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0610-CPk-1",
+     "label": "CPk-1 หมวดหินเขาพระ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       170,
+       110,
+       55,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0620-CPk",
+     "label": "CPk กลุ่มหินแก่งกระจาน"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       180,
+       185,
+       170,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0630-Ck",
+     "label": "Ck หมวดหินควนกลาง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       170,
+       176,
+       176,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0640-Cm",
+     "label": "Cm หมวดหินมายอ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       168,
+       175,
+       175,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0650-Cy",
+     "label": "Cy หมวดหินยะหา"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       168,
+       166,
+       153,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0660-Cy2",
+     "label": "Cy2"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       130,
+       130,
+       130,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0670-Cy1",
+     "label": "Cy1"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       125,
+       133,
+       133,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0680-C",
+     "label": "C"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       175,
+       150,
+       15,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0690-DC",
+     "label": "DC"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       185,
+       155,
+       100,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0700-D",
+     "label": "D"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       155,
+       85,
+       40,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0710-SDCtn",
+     "label": "SDCtn กลุ่มหินตะนาวศรี"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       155,
+       85,
+       40,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0720-SDCtp",
+     "label": "SDCtp กลุ่มหินทองผาภูมิ"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       140,
+       120,
+       80,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0730-SD",
+     "label": "SD"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       180,
+       100,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0740-O",
+     "label": "O กลุ่มหินทุ่งสง"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       117,
+       170,
+       130,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0750-EO",
+     "label": "EO"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       127,
+       142,
+       42,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0760-Et",
+     "label": "Et กลุ่มหินตะรุเตา"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       127,
+       112,
+       20,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0770-E",
+     "label": "E"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       200,
+       200,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0780-PE",
+     "label": "PE"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       240,
+       250,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0790-Qgy",
+     "label": "Qgy"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       230,
+       94,
+       190,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0800-Qbs",
+     "label": "Qbs"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       230,
+       94,
+       138,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0810-Tbs",
+     "label": "Tbs"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       245,
+       127,
+       150,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0820-Tv",
+     "label": "Tv"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       217,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0830-Kgr",
+     "label": "Kgr"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       130,
+       155,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0840-Krh",
+     "label": "Krh"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       150,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0850-Jv",
+     "label": "Jv"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       200,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0860-Trgr",
+     "label": "Trgr"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       230,
+       240,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0870-Trm",
+     "label": "Trm"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       80,
+       125,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0880-PTru",
+     "label": "PTru"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       115,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0890-PTrv",
+     "label": "PTrv"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       180,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0900-PTrgr",
+     "label": "PTrgr"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       115,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0910-Pv",
+     "label": "Pv"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       150,
+       255,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0920-Cgr",
+     "label": "Cgr"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       145,
+       100,
+       200,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0930-Cb",
+     "label": "Cb"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       255,
+       115,
+       180,
+       255
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.1
+      }
+     },
+     "value": "250K-0940-DCv",
+     "label": "DCv"
+    },
+    {
+     "symbol": {
+      "type": "esriPFS",
+      "url": "e838effb3898daac3a9217cb76f82f98",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD2ElEQVRogbWayxEUMQxEfXAVIZIJQZAAMRATWXDjBKfd8nok9WvZ+DTjjyRLrY89M3/8+v335/c/4+u3L6PTorVrn0P7RA6HxhxjfEzKFmUbieaufYpWtm6dVylxf682/Jo7M8YVMWKNSrgKGZEsFW8lS8R3Uq3vBBSEs3cy96a7RXSmgnZmoeyZwq/aWLaePGc01zkf8KYWrxqFHw10RNFExnXOjBhXgpBAl81zod2BOVn/iN5KEBWcXn1d1FQWdOGdrX9EbyWI6neDkmPNE3iv896bphB3IadongStrkvNDI40x1YMnMJhH+8EMOpSk1iNBjWquP2dWsgJsNX7zBYSeHdhvr8rC+1odIqh6D3N0xkDJ5XdOEBEPJ1iqPRpxbBTaVVIcU5ntHpT7++URSM0CRpV/w5RBens+QQ9oU9HTHZGXaY3YL7TocFxn/fYtLLy/yw+3NqAyvnw6Z2wGxSicerX+zOpDYgSlcXT4iQSmBYXTqojscE9OiqLo0B2Ix2RmOBcaOzzHVlQIKsKhUrYaIykPUUzkzNaG7lceuDI+mj1tI9RWoRm54bnI3pTnz5RytqvrNCtESx4U1/tMKLpj0LciS27QtMDR3cjZIOdfN2xcFb5hfBWAqiNqOhcwTujlclQ9RPFpufpytcrBsq6KocqPq5yELyVEB2tU2i7FWAmc6SYD3i7G+rAmwYnZ4MOnb1NMtnpdy3V9d8TBaE7so5QqyDOIcFVfEa/MmZ5731afERrMlhWQjvFS6W89ymrs0G6pjMeCU2Ll0jmyOIzm0yaWtNJh44cBPLRnPLmpFP2RXP2XElpOk0FurU9vlqqhSTQZJA7DVKVYmlaHCP5alkxJv1qzKHb8W2VRa5/tSRjJ+mpmq8s/AhkypczQmosotvxaSKf4vNqYfR2oBMxzfocy1Z8ldLUuIT3LX+nmYCc7lwZ04rMOVd36nWaCU4DJnGVEN7OOdhhls1Ta08idbQOXQGTRi1BrOscG1VQi95RyqIFQnRL0ckCxDWqMeUO4X9kFWG38jq9B1MbUikxQhr+C9gVZmUSPe9rKhno7QoNjPgvYNU6irsBb6fJMpRAlFi3m6+V4GptlYGu+XQnijp0HHqK5jWfdmm4KCEIozW5/VmHNCKQ6/NkraL5KE5IKqie1Vgl0OnNiWv59I6MaNlNH53AlzWS7jI6jw94t7UeCUGrsQ5yCKIel/2nEHeidTdrVBuq+h8+7TDtwLjKmzeqwIxf6dOnsF6ba919jAbLSuHVXuR5uhO5q75qTbQZWow492/yPN2J3EpAOq5a5wZnjDH+AQHc00ukQj/1AAAAAElFTkSuQmCC",
+      "contentType": "image/png",
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        64,
+        101,
+        235,
+        255
+       ],
+       "width": 0.1
+      },
+      "width": 45.75,
+      "height": 45.75,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "xscale": 1,
+      "yscale": 1
+     },
+     "value": "Z-Water body",
+     "label": "Water body"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        187,
+        247,
+        255
+       ],
+       "toColor": [
+        252,
+        187,
+        247,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        250,
+        212,
+        255
+       ],
+       "toColor": [
+        252,
+        250,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        216,
+        252,
+        255
+       ],
+       "toColor": [
+        182,
+        216,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        189,
+        192,
+        255
+       ],
+       "toColor": [
+        252,
+        189,
+        192,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        252,
+        234,
+        255
+       ],
+       "toColor": [
+        179,
+        252,
+        234,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        252,
+        183,
+        255
+       ],
+       "toColor": [
+        182,
+        252,
+        183,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        193,
+        187,
+        252,
+        255
+       ],
+       "toColor": [
+        193,
+        187,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        244,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        244,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        215,
+        247,
+        252,
+        255
+       ],
+       "toColor": [
+        215,
+        247,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        210,
+        234,
+        255
+       ],
+       "toColor": [
+        252,
+        210,
+        234,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        205,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        205,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        215,
+        252,
+        207,
+        255
+       ],
+       "toColor": [
+        215,
+        252,
+        207,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        226,
+        215,
+        252,
+        255
+       ],
+       "toColor": [
+        226,
+        215,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        232,
+        197,
+        252,
+        255
+       ],
+       "toColor": [
+        232,
+        197,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        211,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        211,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        220,
+        252,
+        187,
+        255
+       ],
+       "toColor": [
+        220,
+        252,
+        187,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        230,
+        212,
+        255
+       ],
+       "toColor": [
+        252,
+        230,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        233,
+        179,
+        255
+       ],
+       "toColor": [
+        252,
+        233,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        216,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        216,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        246,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        246,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        210,
+        214,
+        255
+       ],
+       "toColor": [
+        252,
+        210,
+        214,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        207,
+        252,
+        232,
+        255
+       ],
+       "toColor": [
+        207,
+        252,
+        232,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        212,
+        224,
+        252,
+        255
+       ],
+       "toColor": [
+        212,
+        224,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        239,
+        252,
+        199,
+        255
+       ],
+       "toColor": [
+        239,
+        252,
+        199,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        204,
+        252,
+        255
+       ],
+       "toColor": [
+        189,
+        204,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        239,
+        252,
+        255
+       ],
+       "toColor": [
+        189,
+        239,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        252,
+        207,
+        255
+       ],
+       "toColor": [
+        182,
+        252,
+        207,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        204,
+        248,
+        255
+       ],
+       "toColor": [
+        252,
+        204,
+        248,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        219,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        219,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        192,
+        212,
+        255
+       ],
+       "toColor": [
+        252,
+        192,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        194,
+        252,
+        221,
+        255
+       ],
+       "toColor": [
+        194,
+        252,
+        221,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        244,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        244,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        210,
+        197,
+        252,
+        255
+       ],
+       "toColor": [
+        210,
+        197,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        236,
+        202,
+        255
+       ],
+       "toColor": [
+        252,
+        236,
+        202,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        200,
+        194,
+        255
+       ],
+       "toColor": [
+        252,
+        200,
+        194,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        215,
+        252,
+        220,
+        255
+       ],
+       "toColor": [
+        215,
+        252,
+        220,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        214,
+        204,
+        255
+       ],
+       "toColor": [
+        252,
+        214,
+        204,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        241,
+        179,
+        255
+       ],
+       "toColor": [
+        252,
+        241,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        205,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        205,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        184,
+        252,
+        248,
+        255
+       ],
+       "toColor": [
+        184,
+        252,
+        248,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        215,
+        252,
+        244,
+        255
+       ],
+       "toColor": [
+        215,
+        252,
+        244,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        202,
+        252,
+        197,
+        255
+       ],
+       "toColor": [
+        202,
+        252,
+        197,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        195,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        195,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        234,
+        187,
+        252,
+        255
+       ],
+       "toColor": [
+        234,
+        187,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        238,
+        210,
+        252,
+        255
+       ],
+       "toColor": [
+        238,
+        210,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        189,
+        226,
+        252,
+        255
+       ],
+       "toColor": [
+        189,
+        226,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        220,
+        189,
+        252,
+        255
+       ],
+       "toColor": [
+        220,
+        189,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        215,
+        237,
+        252,
+        255
+       ],
+       "toColor": [
+        215,
+        237,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        210,
+        212,
+        252,
+        255
+       ],
+       "toColor": [
+        210,
+        212,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        252,
+        194,
+        255
+       ],
+       "toColor": [
+        182,
+        252,
+        194,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        249,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        249,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        182,
+        225,
+        255
+       ],
+       "toColor": [
+        252,
+        182,
+        225,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        197,
+        230,
+        255
+       ],
+       "toColor": [
+        252,
+        197,
+        230,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        252,
+        199,
+        255
+       ],
+       "toColor": [
+        252,
+        252,
+        199,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        239,
+        252,
+        215,
+        255
+       ],
+       "toColor": [
+        239,
+        252,
+        215,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        239,
+        197,
+        255
+       ],
+       "toColor": [
+        252,
+        239,
+        197,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        195,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        195,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        197,
+        215,
+        252,
+        255
+       ],
+       "toColor": [
+        197,
+        215,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        227,
+        252,
+        202,
+        255
+       ],
+       "toColor": [
+        227,
+        252,
+        202,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        222,
+        197,
+        255
+       ],
+       "toColor": [
+        252,
+        222,
+        197,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        224,
+        204,
+        252,
+        255
+       ],
+       "toColor": [
+        224,
+        204,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        204,
+        252,
+        250,
+        255
+       ],
+       "toColor": [
+        204,
+        252,
+        250,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        233,
+        252,
+        187,
+        255
+       ],
+       "toColor": [
+        233,
+        252,
+        187,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        197,
+        198,
+        252,
+        255
+       ],
+       "toColor": [
+        197,
+        198,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        244,
+        252,
+        192,
+        255
+       ],
+       "toColor": [
+        244,
+        252,
+        192,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        252,
+        229,
+        255
+       ],
+       "toColor": [
+        199,
+        252,
+        229,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        252,
+        222,
+        255
+       ],
+       "toColor": [
+        179,
+        252,
+        222,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        207,
+        240,
+        255
+       ],
+       "toColor": [
+        252,
+        207,
+        240,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        197,
+        252,
+        235,
+        255
+       ],
+       "toColor": [
+        197,
+        252,
+        235,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        197,
+        204,
+        255
+       ],
+       "toColor": [
+        252,
+        197,
+        204,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        213,
+        192,
+        255
+       ],
+       "toColor": [
+        252,
+        213,
+        192,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        194,
+        241,
+        255
+       ],
+       "toColor": [
+        252,
+        194,
+        241,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        204,
+        217,
+        255
+       ],
+       "toColor": [
+        252,
+        204,
+        217,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        252,
+        208,
+        255
+       ],
+       "toColor": [
+        199,
+        252,
+        208,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        203,
+        189,
+        255
+       ],
+       "toColor": [
+        252,
+        203,
+        189,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        197,
+        252,
+        255
+       ],
+       "toColor": [
+        252,
+        197,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        221,
+        252,
+        194,
+        255
+       ],
+       "toColor": [
+        221,
+        252,
+        194,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        227,
+        252,
+        210,
+        255
+       ],
+       "toColor": [
+        227,
+        252,
+        210,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        191,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        191,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        188,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        188,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        244,
+        252,
+        255
+       ],
+       "toColor": [
+        199,
+        244,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        179,
+        239,
+        252,
+        255
+       ],
+       "toColor": [
+        179,
+        239,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        229,
+        252,
+        179,
+        255
+       ],
+       "toColor": [
+        229,
+        252,
+        179,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        234,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        234,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        182,
+        205,
+        255
+       ],
+       "toColor": [
+        252,
+        182,
+        205,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        199,
+        223,
+        252,
+        255
+       ],
+       "toColor": [
+        199,
+        223,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        246,
+        252,
+        210,
+        255
+       ],
+       "toColor": [
+        246,
+        252,
+        210,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        246,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        246,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        189,
+        202,
+        255
+       ],
+       "toColor": [
+        252,
+        189,
+        202,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        208,
+        204,
+        252,
+        255
+       ],
+       "toColor": [
+        208,
+        204,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        204,
+        232,
+        252,
+        255
+       ],
+       "toColor": [
+        204,
+        232,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        240,
+        215,
+        255
+       ],
+       "toColor": [
+        252,
+        240,
+        215,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        189,
+        242,
+        255
+       ],
+       "toColor": [
+        252,
+        189,
+        242,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        206,
+        252,
+        192,
+        255
+       ],
+       "toColor": [
+        206,
+        252,
+        192,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": [
+   {
+    "labelExpression": "[TEXT_SYM]",
+    "labelPlacement": "esriServerLinePlacementAboveAlong",
+    "textLayout": "followFeature",
+    "deconflictionStrategy": "dynamic",
+    "allowOverrun": true,
+    "repeatLabel": false,
+    "lineConnection": "unambiguousLabels",
+    "allowOverlapOfFeatureInterior": "avoid",
+    "stackLabel": true,
+    "stackRowLength": 24,
+    "stackAlignment": "dynamic",
+    "stackSeparators": [],
+    "removeDuplicates": "none",
+    "useCodedValues": true,
+    "maxScale": 100001,
+    "minScale": 1000000,
+    "name": "Default",
+    "priority": 43,
+    "symbol": {
+     "type": "esriTS",
+     "color": [
+      0,
+      0,
+      0,
+      255
+     ],
+     "backgroundColor": null,
+     "borderLineColor": null,
+     "borderLineSize": null,
+     "verticalAlignment": "bottom",
+     "horizontalAlignment": "center",
+     "rightToLeft": false,
+     "angle": 0,
+     "xoffset": 0,
+     "yoffset": 0,
+     "kerning": true,
+     "haloColor": null,
+     "haloSize": null,
+     "font": {
+      "family": "Cordia New",
+      "size": 12,
+      "style": "normal",
+      "weight": "normal",
+      "decoration": "none"
+     }
+    }
+   }
+  ]
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 325828.51099999994,
+  "ymin": 620885.9383000005,
+  "xmax": 1213402.4939000001,
+  "ymax": 2266208.092700001,
+  "spatialReference": {
+   "wkid": 32647,
+   "latestWkid": 32647,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -5120900,
+   "falseY": -9998100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "RU_ID",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "TEXT_SYM",
+   "type": "esriFieldTypeString",
+   "alias": "อักษรสัญลักษณ์ของหน่วยหินที่ปรากฏบนแผนที่",
+   "length": 30,
+   "domain": null
+  },
+  {
+   "name": "YEAR_COMPI",
+   "type": "esriFieldTypeInteger",
+   "alias": "ปี ค.ศ. ที่ประมวลผล",
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.DMRAPP.ROCK_UNIT_250K.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "dmrdb2.DMRAPP.ROCK_UNIT_250K.AREA",
+   "domain": null
+  },
+  {
+   "name": "Shape.STArea()",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape.STArea()",
+   "domain": null
+  },
+  {
+   "name": "Shape.STLength()",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape.STLength()",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "S216_idx",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": true,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "serviceItemId": "ddd5b46567d54490807e97f79267b2e0"
+}

@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-10-26T08:12:41Z",
+  "workbookPath": "tasks/phase_1_data_acquisition_label_validation/IHFC_2024_GHFDB.xlsx",
+  "workbookSha256": "9f5e4595b5362ec9888656c76fbea91da2751fe995d9cea024c0727edcf5bf8b",
+  "workbookDataRowCount": 91182,
+  "invalidCoordinateCount": 0,
+  "regionalEnvelopeWgs84": [
+    97.0,
+    5.0,
+    106.0,
+    21.0
+  ],
+  "regionalRowCount": 460,
+  "spatialClassCounts": {
+    "INSIDE_THAILAND_BOUNDARY": 154,
+    "NEIGHBORING_COUNTRY": 15,
+    "OFFSHORE_REGIONAL_CONTEXT": 291
+  },
+  "insideThailandRowCount": 154,
+  "insideThailandDistinctCoordinateCount": 111,
+  "insideThailandDuplicateCoordinateGroupCount": 28,
+  "insideThailandRepeatedRowsBeyondFirst": 43,
+  "insideThailandCoordinateReviewCount": 0,
+  "insideThailandCompletedReviewCount": 154,
+  "insideThailandOpenReviewCount": 0,
+  "insideThailandMissingHeatFlowCount": 0,
+  "boundaryPath": "tasks/phase_2d_data_readiness/source/ne_10m_admin_0_countries.zip",
+  "boundarySha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+  "boundaryCrs": "EPSG:4326",
+  "boundaryScale": "1:10,000,000",
+  "boundaryLicense": "Natural Earth public domain",
+  "datasetLicense": "CC BY 4.0 (GFZ Data Services metadata for DOI 10.5880/fidgeo.2024.014)",
+  "duplicatePolicy": "Repeated coordinates are retained as separate measurements and annotated, never silently deleted.",
+  "scientificUse": "Descriptive heat-flow observations; not geothermal occurrence labels or an interpolated prospectivity surface.",
+  "mapOutputPath": "web/public/data/ihfc-thailand-points.geojson",
+  "mapFeatureCount": 154,
+  "processingSeconds": 7.06851741700666
+}

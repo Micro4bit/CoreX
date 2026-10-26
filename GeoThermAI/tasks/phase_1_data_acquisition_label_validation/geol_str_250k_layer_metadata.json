@@ -1,0 +1,514 @@
+{
+ "currentVersion": 10.81,
+ "cimVersion": "2.6.0",
+ "id": 0,
+ "name": "เส้นโครงสร้างทางธรณีวิทยา 1:250,000",
+ "type": "Feature Layer",
+ "description": "dmrdb2.DMRAPP.GEOL_STR_250K",
+ "geometryType": "esriGeometryPolyline",
+ "sourceSpatialReference": {
+  "wkid": 32647,
+  "latestWkid": 32647,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -5120900,
+  "falseY": -9998100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "dmrdb2.DMRAPP.GEOL_STR_250K.STR_GRP_ID",
+   "defaultSymbol": {
+    "type": "esriSLS",
+    "style": "esriSLSSolid",
+    "color": [
+     255,
+     167,
+     127,
+     255
+    ],
+    "width": 1
+   },
+   "defaultLabel": "",
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 25
+     },
+     "value": "0110",
+     "label": "ชั้นหินโค้งรูปประทุน"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 25
+     },
+     "value": "0120",
+     "label": "ชั้นหินโค้งรูปประทุนหงาย"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 25
+     },
+     "value": "0140",
+     "label": "ชั้นหินโค้งรูปประทุนตลบทับ"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 0.5
+     },
+     "value": "0200",
+     "label": "รอยเลื่อน"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 1.08
+     },
+     "value": "0220",
+     "label": "รอยเลื่อนย้อนมุมต่ำ"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSDash",
+      "color": [
+       255,
+       0,
+       0,
+       255
+      ],
+      "width": 0.5
+     },
+     "value": "1200",
+     "label": "รอยแตก"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       104,
+       104,
+       104,
+       255
+      ],
+      "width": 0.1
+     },
+     "value": "0310",
+     "label": "แนวของชั้นหิน"
+    },
+    {
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       255
+      ],
+      "width": 0.5
+     },
+     "value": "1100",
+     "label": "อื่นๆ"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        208,
+        204,
+        255
+       ],
+       "toColor": [
+        252,
+        208,
+        204,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        187,
+        252,
+        189,
+        255
+       ],
+       "toColor": [
+        187,
+        252,
+        189,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        188,
+        179,
+        252,
+        255
+       ],
+       "toColor": [
+        188,
+        179,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        238,
+        252,
+        255
+       ],
+       "toColor": [
+        182,
+        238,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        242,
+        182,
+        255
+       ],
+       "toColor": [
+        252,
+        242,
+        182,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        194,
+        248,
+        255
+       ],
+       "toColor": [
+        252,
+        194,
+        248,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        194,
+        252,
+        227,
+        255
+       ],
+       "toColor": [
+        194,
+        252,
+        227,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        212,
+        219,
+        252,
+        255
+       ],
+       "toColor": [
+        212,
+        219,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        230,
+        252,
+        207,
+        255
+       ],
+       "toColor": [
+        230,
+        252,
+        207,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        238,
+        212,
+        255
+       ],
+       "toColor": [
+        252,
+        238,
+        212,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        179,
+        207,
+        255
+       ],
+       "toColor": [
+        252,
+        179,
+        207,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        222,
+        199,
+        252,
+        255
+       ],
+       "toColor": [
+        222,
+        199,
+        252,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        252,
+        215,
+        235,
+        255
+       ],
+       "toColor": [
+        252,
+        215,
+        235,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 328698.1606999999,
+  "ymin": 621603.2199000008,
+  "xmax": 1211082.0739000002,
+  "ymax": 2258615.8499,
+  "spatialReference": {
+   "wkid": 32647,
+   "latestWkid": 32647,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -5120900,
+   "falseY": -9998100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "dmrdb2.DMRAPP.GEOL_STR_250K.STR_NAME_T",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "dmrdb2.DMRAPP.GEOL_STR_250K.OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.DMRAPP.GEOL_STR_250K.DIRECTION",
+   "type": "esriFieldTypeString",
+   "alias": "ทิศทางการวางตัวของรอยเลื่อนหรือรอยคดโค้ง",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.DMRAPP.GEOL_STR_250K.PLUNGE_DIR",
+   "type": "esriFieldTypeString",
+   "alias": "ทิศทางการพลันจ์",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.DMRAPP.GEOL_STR_250K.YEAR_COMPI",
+   "type": "esriFieldTypeInteger",
+   "alias": "ปี ค.ศ. ที่ประมวลผล",
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.dmrapp.LUT_STRUCTURE_TYPE.STR_TYPE_T",
+   "type": "esriFieldTypeString",
+   "alias": "ประเภทโครงสร้างทางธรณีวิทยา(ภาษาไทย)",
+   "length": 150,
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.dmrapp.LUT_STRUCTURE_TYPE.STR_TYPE_E",
+   "type": "esriFieldTypeString",
+   "alias": "ประเภทโครงสร้างทางธรณีวิทยา(ภาษาอังกฤษ)",
+   "length": 150,
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.dmrapp.LUT_STRUCTURE_GROUP.STR_GRP_T",
+   "type": "esriFieldTypeString",
+   "alias": "กลุ่มโครงสร้างทางธรณีวิทยา(ภาษาไทย)",
+   "length": 150,
+   "domain": null
+  },
+  {
+   "name": "dmrdb2.dmrapp.LUT_STRUCTURE_GROUP.STR_GRP_E",
+   "type": "esriFieldTypeString",
+   "alias": "กลุ่มโครงสร้างทางธรณีวิทยา(ภาษาอังกฤษ)",
+   "length": 150,
+   "domain": null
+  }
+ ],
+ "geometryField": {},
+ "indexes": null,
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": false,
+ "supportsExceedsLimitStatistics": false,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": false,
+  "supportsPercentileStatistics": false,
+  "supportsHavingClause": false,
+  "supportsOrderBy": false,
+  "supportsDistinct": false,
+  "supportsCountDistinct": false,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "serviceItemId": "9d9f3f6e9db04702961ffc320f1c68b8"
+}

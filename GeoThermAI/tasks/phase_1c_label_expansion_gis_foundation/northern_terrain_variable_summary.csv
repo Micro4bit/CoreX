@@ -1,0 +1,5 @@
+tile,source_resolution_arc_second,elevation_min_m,elevation_max_m,elevation_mean_m,slope_mean_degrees,slope_p95_degrees,no_data_pixels,method_note
+N17E099.hgt.gz,1,20,1377,255.52,8.90,27.37,0,"Horn-style local gradient approximation on 1-arc-second HGT pixels; summary only, not a model feature set."
+N18E099.hgt.gz,1,107,1996,478.19,11.26,28.73,0,"Horn-style local gradient approximation on 1-arc-second HGT pixels; summary only, not a model feature set."
+N19E099.hgt.gz,1,335,2020,672.77,12.86,30.68,0,"Horn-style local gradient approximation on 1-arc-second HGT pixels; summary only, not a model feature set."
+N20E099.hgt.gz,1,357,2336,906.04,16.95,31.98,0,"Horn-style local gradient approximation on 1-arc-second HGT pixels; summary only, not a model feature set."

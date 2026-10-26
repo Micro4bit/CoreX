@@ -1,0 +1,140 @@
+{
+  "endpoint": "https://gisportal.dmr.go.th/arcgis/rest/services/GEOL/GEOL_STR_250K/MapServer/0/query",
+  "executedAt": "2026-10-24T12:05:27Z",
+  "scientificBoundary": "Response-shape audit only; missing geometry is not approximated or replaced.",
+  "attempts": [
+    {
+      "name": "return_ids",
+      "parameters": {
+        "where": "1=1",
+        "returnIdsOnly": "true",
+        "f": "json"
+      },
+      "summary": {
+        "httpStatus": 200,
+        "contentType": "application/json;charset=UTF-8",
+        "responseType": "object",
+        "topLevelKeys": [
+          "objectIdFieldName",
+          "objectIds"
+        ],
+        "objectIdCount": 12741,
+        "featureCount": 0,
+        "geometryCount": 0,
+        "exceededTransferLimit": null,
+        "error": null
+      }
+    },
+    {
+      "name": "offset_json_4326",
+      "parameters": {
+        "where": "1=1",
+        "outFields": "*",
+        "returnGeometry": "true",
+        "outSR": "4326",
+        "resultOffset": 0,
+        "resultRecordCount": 25,
+        "f": "json"
+      },
+      "summary": {
+        "httpStatus": 200,
+        "contentType": "application/json;charset=UTF-8",
+        "responseType": "object",
+        "topLevelKeys": [
+          "displayFieldName",
+          "exceededTransferLimit",
+          "features",
+          "fieldAliases",
+          "fields"
+        ],
+        "objectIdCount": null,
+        "featureCount": 25,
+        "geometryCount": 0,
+        "exceededTransferLimit": true,
+        "error": null
+      }
+    },
+    {
+      "name": "offset_json_32647",
+      "parameters": {
+        "where": "1=1",
+        "outFields": "*",
+        "returnGeometry": "true",
+        "outSR": "32647",
+        "resultOffset": 0,
+        "resultRecordCount": 25,
+        "f": "json"
+      },
+      "summary": {
+        "httpStatus": 200,
+        "contentType": "application/json;charset=UTF-8",
+        "responseType": "object",
+        "topLevelKeys": [
+          "displayFieldName",
+          "exceededTransferLimit",
+          "features",
+          "fieldAliases",
+          "fields"
+        ],
+        "objectIdCount": null,
+        "featureCount": 25,
+        "geometryCount": 0,
+        "exceededTransferLimit": true,
+        "error": null
+      }
+    },
+    {
+      "name": "object_ids_json",
+      "parameters": {
+        "where": "1=1",
+        "outFields": "*",
+        "returnGeometry": "true",
+        "outSR": "4326",
+        "objectIds": "25488,25489,25490,25491,25492,25493,25494,25495,25496,25497,25498,25499,25500,25501,25502,25503,25504,25505,25506,25507,25508,25509,25510,25511,25512",
+        "f": "json"
+      },
+      "summary": {
+        "httpStatus": 200,
+        "contentType": "application/json;charset=UTF-8",
+        "responseType": "object",
+        "topLevelKeys": [
+          "displayFieldName",
+          "features",
+          "fieldAliases",
+          "fields"
+        ],
+        "objectIdCount": null,
+        "featureCount": 0,
+        "geometryCount": 0,
+        "exceededTransferLimit": null,
+        "error": null
+      }
+    },
+    {
+      "name": "object_ids_esrijson",
+      "parameters": {
+        "where": "1=1",
+        "outFields": "*",
+        "returnGeometry": "true",
+        "outSR": "4326",
+        "objectIds": "25488,25489,25490,25491,25492",
+        "f": "esriJSON"
+      },
+      "summary": {
+        "httpStatus": 400,
+        "contentType": "text/html;charset=utf-8",
+        "responseType": "object",
+        "topLevelKeys": [
+          "error"
+        ],
+        "objectIdCount": null,
+        "featureCount": 0,
+        "geometryCount": 0,
+        "exceededTransferLimit": null,
+        "error": {
+          "message": "<html lang=\"en\">\r\n\r\n<head>\r\n<title>\r\nError: Output format not supported.</title>\r\n<link href=\"/arcgis/rest/static/main.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n</head>\r\n\r\n<body>\r\n\r\n<table width=\"100%\" class=\"userTable\">\r\n<tr>\r\n<td class=\"titlecell\">ArcGIS REST Framework</td>\r\n</tr>\r\n</table>\r\n<table width=\"100%\" class=\"navTable\">\r\n<tr valign=\"top\">\r\n<td class=\"breadcrumbs\">\r\n<a href=\"/arcgis/rest/services\">Home</a>\r\n</td>\r\n</tr>\r\n</table>\r\n\r\n<div class=\"cbody\">\r\n<br/>\r\n<br/>\r\n<b>Error: </b>Outpu"
+        }
+      }
+    }
+  ]
+}

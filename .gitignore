@@ -1,0 +1,43 @@
+# Local runtimes and dependency caches
+**/.venv/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+
+# Test/build/browser runtime output
+**/.pytest_cache/
+**/.playwright-cli/
+**/dist/
+**/output/
+**/test-results/
+
+# Local operating-system and editor state
+.DS_Store*
+.vscode/
+.idea/
+
+# Local credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Third-party research inputs without redistribution clearance.
+# They remain available locally for reproducible, permission-gated processing.
+GeoThermAI/derived/phase2c/dmr-rock-units-north.full.geojson
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/N_ZONE_ACTIVEFAULT_20230419_091427.*
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/activefault_zone.zip
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/geol_structural_250k_sample_5.geojson
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/geol_structural_250k_sample_5_esrijson.json
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/rock_unit_250k_sample_5.geojson
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/rock_unit_250k_sample_5_esrijson.json
+GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/geol_str_250k_northern_esrijson.json
+GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/rock_unit_250k_northern_esrijson.json
+GeoThermAI/web/public/data/dmr-rock-units-north.simplified.geojson
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/*.pdf
+GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/*.pdf
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/dmr_hot_springs-1.png
+GeoThermAI/tasks/phase_1_data_acquisition_label_validation/northern_geothermal_table-02.png
+GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/dmr_hot_spring_official_page.html
+GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/gis_evidence_screen.png

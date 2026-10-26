@@ -1,0 +1,22 @@
+{
+  "screen_type": "descriptive_gis_evidence_screen_not_prediction",
+  "map_bounds_wgs84": {
+    "min_longitude": 99.0,
+    "max_longitude": 100.0,
+    "min_latitude": 17.8,
+    "max_latitude": 20.3
+  },
+  "northern_manifestations_plotted": 16,
+  "coordinate_consistent_points": 14,
+  "coordinate_review_points": 2,
+  "rock_unit_features_drawn": 1266,
+  "active_fault_features_drawn": 630,
+  "dem_tiles": [
+    "N17E099.hgt.gz",
+    "N18E099.hgt.gz",
+    "N19E099.hgt.gz",
+    "N20E099.hgt.gz"
+  ],
+  "terrain_summary_rows": 4,
+  "known_omission": "DMR GEOL_STR_250K attributes were accessed but geometry was unavailable from the service query; not plotted."
+}
