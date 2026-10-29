@@ -134,6 +134,58 @@ const states: Record<string, EligibilityRule> = {
     sourceRecordCount: 0,
     uiEligibility: "DISABLED",
   },
+  DNP_PROTECTED_AREAS: {
+    state: "METADATA_ONLY",
+    display: false,
+    coverageDisplay: false,
+    exportable: false,
+    reason:
+      "DNP National Parks Act B.E. 2562 (Sec. 19) statutory exclusion; boundary metadata cataloged, official polygon shapefile pending formal data request.",
+    acquisitionDate: "2026-10-28 (DNP statutory review)",
+    transformationMethod: "None; official cadastral boundaries not yet imported into local workspace.",
+    geometryCount: 0,
+    sourceRecordCount: 156,
+    uiEligibility: "DISABLED",
+  },
+  ONWR_WATERSHED_CLASSES: {
+    state: "METADATA_ONLY",
+    display: false,
+    coverageDisplay: false,
+    exportable: false,
+    reason:
+      "Cabinet Watershed Classification (WSC 1A strict headwater exclusion, WSC 1B/2 conditional EIA review); official ONWR/ONEP GIS dataset requested.",
+    acquisitionDate: "2026-10-28 (ONWR cabinet policy review)",
+    transformationMethod: "None; awaiting official 1:50,000 WSC polygon transfer.",
+    geometryCount: 0,
+    sourceRecordCount: 25,
+    uiEligibility: "DISABLED",
+  },
+  RFD_FOREST_RESERVES: {
+    state: "METADATA_ONLY",
+    display: false,
+    coverageDisplay: false,
+    exportable: false,
+    reason:
+      "National Reserved Forests Act B.E. 2507 (Sec. 16 permit required); pending RFD GIS boundary acquisition.",
+    acquisitionDate: "2026-10-28 (RFD statutory review)",
+    transformationMethod: "None; pending RFD shapefile transfer.",
+    geometryCount: 0,
+    sourceRecordCount: 1221,
+    uiEligibility: "DISABLED",
+  },
+  DGR_GROUNDWATER_SENSITIVITY: {
+    state: "METADATA_ONLY",
+    display: false,
+    coverageDisplay: false,
+    exportable: false,
+    reason:
+      "Groundwater Act B.E. 2520 protection zones and shallow aquifer vulnerability; DGR 1:100,000 hydrogeological maps cataloged.",
+    acquisitionDate: "2026-10-28 (DGR hydrogeology review)",
+    transformationMethod: "None; metadata cataloged.",
+    geometryCount: 0,
+    sourceRecordCount: 77,
+    uiEligibility: "DISABLED",
+  },
 };
 
 const landsatCandidate: GisLayer = {
@@ -157,14 +209,84 @@ const landsatCandidate: GisLayer = {
   current_phase1c_use: "Disabled",
 };
 
+const additionalCandidates: GisLayer[] = [
+  landsatCandidate,
+  {
+    layer_id: "DNP_PROTECTED_AREAS",
+    layer_category: "environmental_protected_areas",
+    publisher_or_source: "Department of National Parks, Wildlife and Plant Conservation (DNP)",
+    source_url: "https://www.dnp.go.th",
+    local_artifact: "Metadata only; official shapefile pending DNP data agreement",
+    access_status: "METADATA_ONLY",
+    spatial_coverage: "Nationwide Thailand protected areas (156 National Parks, 60 Sanctuaries)",
+    coordinate_reference: "EPSG:32647 (UTM Zone 47N)",
+    geometry_or_resolution: "1:50,000 Cadastral Polygons",
+    units_or_attributes: "Park Name, Category, Royal Gazette Announcement Date, Area (Rai/km²)",
+    source_date_or_version: "National Parks Act B.E. 2562",
+    actual_inspection: "Statutory rules and manifestation intersections cataloged in Phase 2G",
+    quality_and_missing_data: "Spatial polygons not local; status honest METADATA_ONLY",
+    license_or_permission_status: "Official Thai Government Data (Subject to Ministerial Request)",
+    current_phase1c_use: "Environmental Screening Rules defined in Phase 2G; vector display disabled",
+  },
+  {
+    layer_id: "ONWR_WATERSHED_CLASSES",
+    layer_category: "environmental_watershed",
+    publisher_or_source: "Office of the National Water Resources (ONWR) / DWR / ONEP",
+    source_url: "http://www.onwr.go.th",
+    local_artifact: "Metadata only; official WSC shapefile pending ONWR transfer",
+    access_status: "METADATA_ONLY",
+    spatial_coverage: "25 Major River Basins of Thailand",
+    coordinate_reference: "EPSG:32647 (UTM Zone 47N)",
+    geometry_or_resolution: "1:50,000 Watershed Classification Polygons",
+    units_or_attributes: "Watershed Class (1A, 1B, 2, 3, 4, 5), Basin Code, Area",
+    source_date_or_version: "Cabinet Resolutions on Watershed Classification",
+    actual_inspection: "Screening rules cataloged in Phase 2G; Class 1A strict exclusion",
+    quality_and_missing_data: "Spatial polygons not local; status honest METADATA_ONLY",
+    license_or_permission_status: "Official Thai Government Data (Subject to Agency Request)",
+    current_phase1c_use: "Environmental Screening Rules defined in Phase 2G; vector display disabled",
+  },
+  {
+    layer_id: "RFD_FOREST_RESERVES",
+    layer_category: "environmental_forest_reserves",
+    publisher_or_source: "Royal Forest Department (RFD)",
+    source_url: "https://www.forest.go.th",
+    local_artifact: "Metadata only; official reserved forest boundaries pending RFD transfer",
+    access_status: "METADATA_ONLY",
+    spatial_coverage: "Nationwide Thailand National Reserved Forests",
+    coordinate_reference: "EPSG:32647 (UTM Zone 47N)",
+    geometry_or_resolution: "1:50,000 Forest Reserve Polygons",
+    units_or_attributes: "Forest Name, Section 16 Concession Status, Area",
+    source_date_or_version: "National Reserved Forests Act B.E. 2507",
+    actual_inspection: "Statutory concession pathway cataloged in Phase 2G",
+    quality_and_missing_data: "Spatial polygons not local; status honest METADATA_ONLY",
+    license_or_permission_status: "Official Thai Government Data (Subject to Agency Request)",
+    current_phase1c_use: "Environmental Screening Rules defined in Phase 2G; vector display disabled",
+  },
+  {
+    layer_id: "DGR_GROUNDWATER_SENSITIVITY",
+    layer_category: "hydrogeology_groundwater",
+    publisher_or_source: "Department of Groundwater Resources (DGR)",
+    source_url: "https://www.dgr.go.th",
+    local_artifact: "Metadata only; hydrogeological maps and monitoring well records cataloged",
+    access_status: "METADATA_ONLY",
+    spatial_coverage: "Nationwide Thailand Hydrogeological Basins",
+    coordinate_reference: "EPSG:32647 (UTM Zone 47N)",
+    geometry_or_resolution: "1:100,000 Hydrogeological Map Sheets",
+    units_or_attributes: "Aquifer Type, Yield (m³/hr), Salinity/TDS, Water Table Depth (m)",
+    source_date_or_version: "Groundwater Act B.E. 2520",
+    actual_inspection: "Well casing and aquifer protection rules cataloged in Phase 2G",
+    quality_and_missing_data: "Spatial polygons not local; status honest METADATA_ONLY",
+    license_or_permission_status: "Official Thai Government Data (Subject to Agency Request)",
+    current_phase1c_use: "Environmental Screening Rules defined in Phase 2G; vector display disabled",
+  },
+];
+
 export function registerGisLayers(
   sourceLayers: GisLayer[],
 ): RegisteredGisLayer[] {
-  const candidates = sourceLayers.some(
-    (source) => source.layer_id === landsatCandidate.layer_id,
-  )
-    ? sourceLayers
-    : [...sourceLayers, landsatCandidate];
+  const existingIds = new Set(sourceLayers.map((s) => s.layer_id));
+  const missing = additionalCandidates.filter((c) => !existingIds.has(c.layer_id));
+  const candidates = [...sourceLayers, ...missing];
   return candidates.map((source) => {
     const resolved: EligibilityRule = states[source.layer_id] ?? {
       state: "NOT_LOADED" as const,

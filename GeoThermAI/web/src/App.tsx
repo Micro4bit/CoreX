@@ -49,6 +49,10 @@ import {
 } from "./evidenceExport";
 import { layerById, registerGisLayers } from "./gisRegistry";
 import { translate, type Language, type Translator } from "./i18n";
+import {
+  TerrainPreview3D,
+  type TerrainPreviewTarget,
+} from "./TerrainPreview3D";
 import type {
   GeothermalRecord,
   LocationInspection,
@@ -310,6 +314,8 @@ function WorkspacePage({
   const [measurement, setMeasurement] = useState<MeasurementResult | null>(
     null,
   );
+  const [terrainTarget, setTerrainTarget] =
+    useState<TerrainPreviewTarget | null>(null);
   const filtered = useMemo(
     () => filterRecords(records, filters),
     [records, filters],
@@ -364,6 +370,28 @@ function WorkspacePage({
   const handleSelect = (record: GeothermalRecord) => {
     setSelected(record);
     setInspection(null);
+    const longitude = Number(record.derived_longitude_wgs84);
+    const latitude = Number(record.derived_latitude_wgs84);
+    const previewEligible =
+      isConsistent(record) ||
+      (isProvisional(record) && filters.showProvisional);
+    if (
+      previewEligible &&
+      Number.isFinite(longitude) &&
+      Number.isFinite(latitude)
+    ) {
+      setTerrainTarget({
+        name: record.source_site_name || record.source_record_code,
+        longitude,
+        latitude,
+        coordinateStatus: isConsistent(record)
+          ? t("internallyConsistent")
+          : isProvisional(record)
+            ? t("provisionalCoordinate")
+            : t("requiresReview"),
+        recordId: record.record_uid,
+      });
+    }
   };
   return (
     <div className={`workspace-page ${showKpis ? "with-kpis" : "map-only"}`}>
@@ -438,6 +466,14 @@ function WorkspacePage({
                     setInspection(value);
                     setSelected(null);
                   }}
+                  onPreview3D={({ longitude, latitude }) =>
+                    setTerrainTarget({
+                      name: t("selectedMapLocation"),
+                      longitude,
+                      latitude,
+                      coordinateStatus: t("mapClickCoordinate"),
+                    })
+                  }
                   onMeasurement={setMeasurement}
                   faultDistanceReason={
                     layerById(gisLayers, "DMR_ACTIVEFAULT_ZONE")?.stateReason
@@ -479,6 +515,14 @@ function WorkspacePage({
                         setInspection(value);
                         setSelected(null);
                       }}
+                      onPreview3D={({ longitude, latitude }) =>
+                        setTerrainTarget({
+                          name: t("selectedMapLocation"),
+                          longitude,
+                          latitude,
+                          coordinateStatus: t("mapClickCoordinate"),
+                        })
+                      }
                       onMeasurement={setMeasurement}
                       faultDistanceReason={
                         layerById(gisLayers, "DMR_ACTIVEFAULT_ZONE")
@@ -528,6 +572,13 @@ function WorkspacePage({
           selected={selected}
           showProvisionalCoordinates={filters.showProvisional}
           onClose={() => setSelected(null)}
+          t={t}
+        />
+      )}
+      {terrainTarget && (
+        <TerrainPreview3D
+          target={terrainTarget}
+          onClose={() => setTerrainTarget(null)}
           t={t}
         />
       )}
@@ -1565,6 +1616,54 @@ function Metric({
 }
 
 function ResearchStatus({ t }: { t: Translator }) {
+  const gateConditions = [
+    {
+      id: "authoritative_label_review",
+      name: t("gateAuthoritativeLabels"),
+      reason: t("gateAuthoritativeLabelsReason"),
+    },
+    {
+      id: "independent_system_group_review",
+      name: t("gateSystemGroups"),
+      reason: t("gateSystemGroupsReason"),
+    },
+    {
+      id: "locked_pilot_region",
+      name: t("gatePilotRegion"),
+      reason: t("gatePilotRegionReason"),
+    },
+    {
+      id: "licensed_predictor_coverage",
+      name: t("gatePredictorCoverage"),
+      reason: t("gatePredictorCoverageReason"),
+    },
+    {
+      id: "pu_background_protocol",
+      name: t("gatePuProtocol"),
+      reason: t("gatePuProtocolReason"),
+    },
+    {
+      id: "preregistered_spatial_group_validation",
+      name: t("gateSpatialValidation"),
+      reason: t("gateSpatialValidationReason"),
+    },
+    {
+      id: "sufficient_independent_groups",
+      name: t("gateSufficientGroups"),
+      reason: t("gateSufficientGroupsReason"),
+    },
+    {
+      id: "external_geographic_holdout",
+      name: t("gateExternalHoldout"),
+      reason: t("gateExternalHoldoutReason"),
+    },
+    {
+      id: "rights_and_output_review",
+      name: t("gateRightsReview"),
+      reason: t("gateRightsReviewReason"),
+    },
+  ];
+
   return (
     <div className="page status-page">
       <div className="page-intro">
@@ -1580,12 +1679,12 @@ function ResearchStatus({ t }: { t: Translator }) {
       <section className="status-grid">
         <article className="panel status-card approved">
           <p className="eyebrow">{t("currentPhase")}</p>
-          <h2>Phase 2D — research data readiness</h2>
+          <h2>Phase 2E — prediction-first research & gate protocol</h2>
           <p>{t("safetyNote")}</p>
         </article>
         <article className="panel status-card blocked">
           <p className="eyebrow">{t("masterDecision")}</p>
-          <h2>Predictive ML readiness — No-go</h2>
+          <h2>Predictive ML readiness — No-go (9 Blockers)</h2>
           <p>{t("rejectedText")}</p>
         </article>
         <article className="panel span-2">
@@ -1602,28 +1701,35 @@ function ResearchStatus({ t }: { t: Translator }) {
           </div>
         </article>
         <article className="panel span-2">
-          <p className="eyebrow">{t("knownBlockers")}</p>
-          <ol className="blocker-list">
-            <li>
-              Authoritative coordinate-level Thai occurrence inventory and reuse
-              permission.
-            </li>
-            <li>
-              Resolution of CR_02, CM_16, southern UTM zone, and the
-              source-table 31/30 conflict.
-            </li>
-            <li>
-              Domain-geologist review of independent-system group membership.
-            </li>
-            <li>
-              Usable structural geometry and verified predictor-layer
-              permissions.
-            </li>
-            <li>
-              Pre-registered sampling and geographically valid evaluation
-              design.
-            </li>
-          </ol>
+          <p className="eyebrow">{t("gateChecklistTitle")}</p>
+          <div className="gate-checklist-grid">
+            {gateConditions.map((cond) => (
+              <div key={cond.id} className="gate-item blocked">
+                <div className="gate-header">
+                  <span className="gate-badge blocked">NO-GO</span>
+                  <b>{cond.name}</b>
+                </div>
+                <p>{cond.reason}</p>
+              </div>
+            ))}
+          </div>
+        </article>
+        <article className="panel span-2">
+          <p className="eyebrow">{t("plannedModelsTitle")}</p>
+          <div className="three-column-list">
+            <div>
+              <b>Model A — Baseline PFA</b>
+              <p>{t("modelADesc")}</p>
+            </div>
+            <div>
+              <b>Model B — Statistical ML</b>
+              <p>{t("modelBDesc")}</p>
+            </div>
+            <div>
+              <b>Model C — Tree Ensemble</b>
+              <p>{t("modelCDesc")}</p>
+            </div>
+          </div>
         </article>
       </section>
     </div>

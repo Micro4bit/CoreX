@@ -77,3 +77,276 @@
   .spatial-toolbar button svg { width: 16px; height: 16px; }
   .spatial-toolbar button:last-child { font-size: 9px; }
 }
+
+.terrain-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(10, 24, 38, .64);
+  backdrop-filter: blur(8px);
+}
+.terrain-dialog {
+  width: min(920px, 94vw);
+  max-height: 92vh;
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,.66);
+  border-radius: 18px;
+  background: #f8fbfa;
+  box-shadow: 0 28px 80px rgba(3, 17, 27, .36);
+}
+.terrain-dialog-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 18px 14px 20px;
+  background: rgba(255,255,255,.94);
+  border-bottom: 1px solid #dce6e3;
+}
+.terrain-dialog-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.terrain-dialog-title > span {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(145deg, #1b8b72, #246c59);
+  box-shadow: 0 8px 18px rgba(27,139,114,.2);
+}
+.terrain-dialog-title h2 {
+  margin: 0;
+  color: #152d2b;
+  font-size: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.terrain-dialog-title .eyebrow { color: #27806d; }
+.terrain-close {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d8e3e0;
+  border-radius: 10px;
+  background: #fff;
+  color: #526963;
+}
+.terrain-close:hover { border-color: #2b8e77; color: #186d59; }
+.terrain-stage {
+  position: relative;
+  min-height: 450px;
+  overflow: hidden;
+  background: #d9eff4;
+}
+.terrain-stage > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.terrain-stage > svg:active { cursor: grabbing; }
+.terrain-compass,
+.terrain-drag-hint,
+.terrain-controls {
+  position: absolute;
+  z-index: 2;
+  border: 1px solid rgba(255,255,255,.8);
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 5px 18px rgba(19,48,44,.13);
+  backdrop-filter: blur(8px);
+}
+.terrain-compass {
+  top: 16px;
+  right: 16px;
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 3px;
+  border-radius: 50%;
+  color: #1f6f5f;
+}
+.terrain-compass svg { transition: transform .2s ease; }
+.terrain-compass b { font-size: 9px; }
+.terrain-drag-hint {
+  left: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border-radius: 9px;
+  color: #365a52;
+  font-size: 10px;
+  font-weight: 700;
+}
+.terrain-controls {
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  border-radius: 10px;
+}
+.terrain-controls button {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #315c53;
+}
+.terrain-controls button:hover,
+.terrain-controls button:focus-visible {
+  background: #dff2ed;
+  outline: 2px solid rgba(27,139,114,.25);
+}
+.terrain-dialog-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px 18px 16px;
+  border-top: 1px solid #dce6e3;
+  background: #fff;
+}
+.terrain-dialog-footer > div {
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: #f2f7f5;
+}
+.terrain-dialog-footer span {
+  display: block;
+  margin-bottom: 3px;
+  color: #758a85;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.terrain-dialog-footer b {
+  display: block;
+  overflow: hidden;
+  color: #29443e;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.terrain-dialog-footer p {
+  grid-column: 1 / -1;
+  margin: 1px 2px 0;
+  padding: 8px 10px;
+  border: 1px solid #f0dda9;
+  border-radius: 8px;
+  background: #fff8e7;
+  color: #805d18;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  .terrain-dialog-backdrop { padding: 8px; }
+  .terrain-dialog { width: 100%; max-height: 96vh; border-radius: 13px; }
+  .terrain-stage { min-height: 390px; }
+  .terrain-stage > svg { min-height: 390px; width: auto; max-width: none; transform: translateX(-12%); }
+  .terrain-dialog-footer { grid-template-columns: 1fr; }
+  .terrain-dialog-footer p { grid-column: 1; }
+  .terrain-drag-hint { display: none; }
+}
+
+.gate-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.gate-item {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fbfdfc;
+  border: 1px solid #e2ece9;
+}
+
+.gate-item.blocked {
+  border-left: 4px solid #d9534f;
+}
+
+.gate-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.gate-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+.gate-badge.blocked {
+  background: #fde8e8;
+  color: #c53030;
+}
+
+.gate-item b {
+  font-size: 12px;
+  color: #1e3a34;
+}
+
+.gate-item p {
+  margin: 0;
+  font-size: 11px;
+  color: #55726b;
+  line-height: 1.45;
+}
+
+.three-column-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.three-column-list > div {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f4f8f7;
+  border: 1px solid #dde7e4;
+}
+
+.three-column-list b {
+  display: block;
+  font-size: 13px;
+  color: #153e35;
+  margin-bottom: 5px;
+}
+
+.three-column-list p {
+  margin: 0;
+  font-size: 11px;
+  color: #48665f;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .three-column-list {
+    grid-template-columns: 1fr;
+  }
+}

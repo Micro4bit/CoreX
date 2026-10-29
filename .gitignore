@@ -41,3 +41,21 @@ GeoThermAI/tasks/phase_1_data_acquisition_label_validation/dmr_hot_springs-1.png
 GeoThermAI/tasks/phase_1_data_acquisition_label_validation/northern_geothermal_table-02.png
 GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/dmr_hot_spring_official_page.html
 GeoThermAI/tasks/phase_1c_label_expansion_gis_foundation/gis_evidence_screen.png
+
+# Research library - track index and documentation, ignore binary papers / copyrighted PDFs
+research_library/**/*.pdf
+research_library/**/*.docx
+research_library/**/*.doc
+research_library/**/*.zip
+
+# Unnecessary implementation reports and execution logs
+*IMPLEMENTATION_REPORT*.md
+*Implementation_Report*.md
+*UI_IMPLEMENTATION_REPORT*.md
+*TEST_LOG*.md
+*test_log*.md
+*EXECUTION_LOG*.md
+*execution_log*.md
+GeoThermAI/web/*_REPORT*.md
+GeoThermAI/research_library
+*ML_GATE_REPORT*.md

@@ -65,6 +65,7 @@ export function EvidenceMap({
   selectedRecordId,
   onSelect,
   onInspect,
+  onPreview3D,
   onMeasurement,
   faultDistanceReason,
   t,
@@ -80,6 +81,7 @@ export function EvidenceMap({
   selectedRecordId?: string;
   onSelect?: (record: GeothermalRecord) => void;
   onInspect?: (inspection: LocationInspection) => void;
+  onPreview3D?: (location: { longitude: number; latitude: number }) => void;
   onMeasurement?: (measurement: MeasurementResult | null) => void;
   faultDistanceReason?: string;
   t: Translator;
@@ -89,6 +91,7 @@ export function EvidenceMap({
   const recordsRef = useRef(records);
   const selectRef = useRef(onSelect);
   const inspectRef = useRef(onInspect);
+  const preview3DRef = useRef(onPreview3D);
   const toolRef = useRef<MapTool>(null);
   const [coordinates, setCoordinates] = useState("100.6500° E, 13.5000° N");
   const [tool, setTool] = useState<MapTool>(null);
@@ -96,6 +99,7 @@ export function EvidenceMap({
   recordsRef.current = records;
   selectRef.current = onSelect;
   inspectRef.current = onInspect;
+  preview3DRef.current = onPreview3D;
   toolRef.current = tool;
 
   useEffect(() => {
@@ -258,7 +262,18 @@ export function EvidenceMap({
       });
       instance.on("click", (event: MapMouseEvent) => {
         const activeTool = toolRef.current;
-        if (!activeTool) return;
+        if (!activeTool) {
+          const marker = instance.queryRenderedFeatures(event.point, {
+            layers: ["observation-points"],
+          })[0];
+          if (!marker) {
+            preview3DRef.current?.({
+              longitude: event.lngLat.lng,
+              latitude: event.lngLat.lat,
+            });
+          }
+          return;
+        }
         if (activeTool === "inspect") {
           const queryLayers = [
             "geology-fill",

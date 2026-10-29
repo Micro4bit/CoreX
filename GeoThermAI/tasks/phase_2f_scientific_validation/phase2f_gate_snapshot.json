@@ -1,0 +1,80 @@
+{
+  "phase": "2F",
+  "snapshot_date": "2026-10-27",
+  "origin": "PHASE2D_ML_GATE + PHASE2E_IMPLEMENTATION_REPORT",
+  "decision": "NO_GO_FOR_PREDICTIVE_ML",
+  "review_requirements": {
+    "labels_verified": {
+      "title": "Expert-reviewed authoritative geothermal labels and withheld-row policy",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "47 rows != 47 independent systems; 14 internally consistent, 31 provisional, 2 withheld"
+    },
+    "independent_groups_verified": {
+      "title": "Domain expert signed independent geothermal system grouping",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "Phase 2E estimates ~6–10 systems in North; estimate unapproved; 18 co-withholding units not expert-confirmed"
+    },
+    "study_area_locked": {
+      "title": "Locked pilot AOI and documented exclusion/holdout geography",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "Candidate North AOI 98.0–100.5 E, 17.0–20.5 N not yet approved; check permitted predictor coverage"
+    },
+    "predictors_licensed_and_covered": {
+      "title": "Permitted predictor layers with sufficient contiguous overlap",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "Northern DMR geology rights unknown, active fault reuse blocked, terrain covers five tiles only"
+    },
+    "pu_background_protocol_approved": {
+      "title": "Positive-unlabeled/background sampling design reviewed",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "No validated negatives; unobserved does not imply absence"
+    },
+    "spatial_validation_preregistered": {
+      "title": "Fold, buffer, and leakage controls preregistered",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "Phase 2E proposes 20 km buffer, but must justify/adjust via spatial range and availability"
+    },
+    "independent_validation_feasible": {
+      "title": "Sufficient effective independent validation groups confirmed",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "No verified independent system counts; small effective sample likely"
+    },
+    "external_test_plan_approved": {
+      "title": "Geographically separate evaluation or explicit non-estimability approved",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "No approved independent geographical external test with truth labels"
+    },
+    "output_release_approved": {
+      "title": "Model outputs, source derivatives and redistribution rights reviewed",
+      "approved": false,
+      "evidence_uri": "",
+      "reviewer": "",
+      "approved_on": "",
+      "why_blocked": "DMR derivative and active fault licensing unsettled; output restrictions unresolved"
+    }
+  }
+}

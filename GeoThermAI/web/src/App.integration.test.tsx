@@ -122,4 +122,42 @@ describe("Phase 2C workspace integration", () => {
     ).toBe(true);
     expect(screen.getByText(/Raw evidence export blocked/)).toBeTruthy();
   });
+
+  it("opens a rotatable 3D area preview from an eligible list record", () => {
+    render(
+      <MemoryRouter initialEntries={["/evidence-map"]}>
+        <App />
+      </MemoryRouter>,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "List" }));
+    fireEvent.click(screen.getByRole("button", { name: /^Kok River/ }));
+
+    expect(screen.getByRole("dialog", { name: "Kok River" })).toBeTruthy();
+    expect(screen.getByText(/Illustrative generated surface only/)).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Rotate right" })).toBeTruthy();
+
+    fireEvent.click(screen.getByRole("button", { name: "Close 3D preview" }));
+    expect(screen.queryByRole("dialog")).toBeNull();
+  });
+
+  it("renders Phase 2E scientific gate status and 9 prerequisite blocked conditions on research-status route", () => {
+    render(
+      <MemoryRouter initialEntries={["/research-status"]}>
+        <App />
+      </MemoryRouter>,
+    );
+
+    expect(
+      screen.getByText(/Phase 2E — prediction-first research & gate protocol/),
+    ).toBeTruthy();
+    expect(
+      screen.getByText(/Predictive ML readiness — No-go \(9 Blockers\)/),
+    ).toBeTruthy();
+    expect(
+      screen.getByText(/Scientific ML Readiness Gate — 9 Prerequisite Conditions/),
+    ).toBeTruthy();
+    expect(screen.getByText(/Authoritative Positive Labels/)).toBeTruthy();
+    expect(screen.getByText(/Independent Hydrothermal System Groups/)).toBeTruthy();
+    expect(screen.getByText(/Model A — Baseline PFA/)).toBeTruthy();
+  });
 });

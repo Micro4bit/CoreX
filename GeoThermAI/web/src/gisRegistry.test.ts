@@ -42,6 +42,30 @@ describe("Phase 2D GIS layer registry", () => {
       coverageDisplayEligible: false,
       geometryCount: 0,
     });
+    expect(layerById(layers, "DNP_PROTECTED_AREAS")).toMatchObject({
+      state: "METADATA_ONLY",
+      displayEligible: false,
+      exportEligible: false,
+      uiEligibility: "DISABLED",
+    });
+    expect(layerById(layers, "ONWR_WATERSHED_CLASSES")).toMatchObject({
+      state: "METADATA_ONLY",
+      displayEligible: false,
+      exportEligible: false,
+      uiEligibility: "DISABLED",
+    });
+    expect(layerById(layers, "RFD_FOREST_RESERVES")).toMatchObject({
+      state: "METADATA_ONLY",
+      displayEligible: false,
+      exportEligible: false,
+      uiEligibility: "DISABLED",
+    });
+    expect(layerById(layers, "DGR_GROUNDWATER_SENSITIVITY")).toMatchObject({
+      state: "METADATA_ONLY",
+      displayEligible: false,
+      exportEligible: false,
+      uiEligibility: "DISABLED",
+    });
     expect(
       layers.every(
         (layer) =>

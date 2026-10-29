@@ -1,0 +1,17 @@
+{
+  "decision": "NO_GO_FOR_PREDICTIVE_ML",
+  "requirements_total": 9,
+  "conditions_blocked": 9,
+  "blockers": {
+    "labels_verified": "47 rows != 47 independent systems; 14 internally consistent, 31 provisional, 2 withheld",
+    "independent_groups_verified": "Phase 2E estimates ~6–10 systems in North; estimate unapproved; 18 co-withholding units not expert-confirmed",
+    "study_area_locked": "Candidate North AOI 98.0–100.5 E, 17.0–20.5 N not yet approved; check permitted predictor coverage",
+    "predictors_licensed_and_covered": "Northern DMR geology rights unknown, active fault reuse blocked, terrain covers five tiles only",
+    "pu_background_protocol_approved": "No validated negatives; unobserved does not imply absence",
+    "spatial_validation_preregistered": "Phase 2E proposes 20 km buffer, but must justify/adjust via spatial range and availability",
+    "independent_validation_feasible": "No verified independent system counts; small effective sample likely",
+    "external_test_plan_approved": "No approved independent geographical external test with truth labels",
+    "output_release_approved": "DMR derivative and active fault licensing unsettled; output restrictions unresolved"
+  },
+  "warning": "GO_FOR_REVIEW_ONLY is NOT authorization to train; confirm the repository gate and independent approvals."
+}

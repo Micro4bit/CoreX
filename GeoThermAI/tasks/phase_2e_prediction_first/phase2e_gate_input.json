@@ -1,0 +1,16 @@
+{
+  "project": "GeoThermAI",
+  "snapshot_date": "2026-10-26",
+  "phase2d_reference": "PHASE2D_ML_GATE.md",
+  "conditions": {
+    "authoritative_label_review": {"approved": false, "evidence": "Phase 2D: CR_02, CM_16 and southern provisional records not resolved"},
+    "independent_system_group_review": {"approved": false, "evidence": "Phase 2D: 18 co-withholding units unvalidated by domain expert"},
+    "locked_pilot_region": {"approved": false, "evidence": "No permitted, contiguous pilot coverage confirmed"},
+    "licensed_predictor_coverage": {"approved": false, "evidence": "Fault geometry unavailable or license blocked; other layers partial"},
+    "pu_background_protocol": {"approved": false, "evidence": "No verified negatives and no approved PU design"},
+    "preregistered_spatial_group_validation": {"approved": false, "evidence": "Design requirement exists, no approved folds/exclusion buffer"},
+    "sufficient_independent_groups": {"approved": false, "evidence": "Effective independent sample size not validated"},
+    "external_geographic_holdout": {"approved": false, "evidence": "Geographically independent evaluation region not locked"},
+    "rights_and_output_review": {"approved": false, "evidence": "DMR geology redistribution and active-fault permission unresolved"}
+  }
+}

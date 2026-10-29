@@ -1,0 +1,28 @@
+{
+  "project": "GeoThermAI",
+  "phase": "2F.1",
+  "snapshot_date": "2026-10-28",
+  "origin": "PHASE2F_ML_GATE_REPORT + PHASE2F.1_SCIENTIFIC_BASELINE_CORRECTION",
+  "decision": "NO_GO_FOR_PREDICTIVE_ML",
+  "requirements_total": 9,
+  "conditions_blocked": 9,
+  "blockers": {
+    "labels_verified": "47 manifestation rows represent only 6–10 independent hydrothermal systems in North; 14 internally consistent, 31 provisional southern records excluded, 2 withheld (CR_02 UTM mismatch >1km, CM_16 missing DMS); expert hydrogeologist signoff pending",
+    "independent_groups_verified": "Independent system clustering unapproved by external hydrogeologists; co-withholding units unverified with documentary evidence",
+    "study_area_locked": "Candidate North AOI (98.0°–100.5° E, 17.0°–20.5° N) contains severe predictor gaps (SRTM DEM true coverage 51.39%, DMR geology true coverage 44.74%); cannot be locked until missing tiles/quadrangles acquired",
+    "predictors_licensed_and_covered": "DMR active fault reuse blocked due to conflicting Open Government vs non-commercial terms; DMR 1:250k geology derivative release unconfirmed; 7 SRTM 1-degree elevation tiles missing",
+    "pu_background_protocol_approved": "Positive-Unlabeled background protocol preregistered, but no validated negatives exist; unobserved does not imply absence of blind geothermal systems",
+    "spatial_validation_preregistered": "Buffer sensitivity schedule preregistered (5, 10, 15, 20, 30 km); fixed 20 km assumption deprecated as provisional hypothesis",
+    "independent_validation_feasible": "Effective independent sample size is 6–10 systems; if expert review confirms <5 independent systems, EVALUATION_NOT_ESTIMABLE rule will be enforced",
+    "external_test_plan_approved": "No approved independent geographical external holdout with verified ground truth labels",
+    "output_release_approved": "DMR derivative map publication and active fault commercial licensing unsettled; output restrictions unresolved"
+  },
+  "runtime_enforcement": {
+    "predictive_model_fitting": "DISABLED",
+    "spatial_interpolation_rasters": "DISABLED",
+    "prospectivity_heatmap_rendering": "DISABLED",
+    "probability_or_drilling_success_claims": "FORBIDDEN",
+    "usgs_replication_sandbox": "ISOLATED_UNDER_USGS_REPLICATION_ONLY"
+  },
+  "warning": "Passing metadata checks is not scientific validity. No model will be trained or released until authorized external human experts provide primary documentary sign-offs for geology/fault licensing, independent system clustering, and holdout evaluation."
+}

@@ -1,0 +1,45 @@
+{
+  "project": "GeoThermAI",
+  "snapshot_date": "2026-10-26",
+  "decision": "NO_GO_FOR_PREDICTIVE_ML",
+  "blocked_count": 9,
+  "blocked_conditions": [
+    {
+      "condition": "authoritative_label_review",
+      "reason": "Phase 2D: CR_02, CM_16 and southern provisional records not resolved"
+    },
+    {
+      "condition": "independent_system_group_review",
+      "reason": "Phase 2D: 18 co-withholding units unvalidated by domain expert"
+    },
+    {
+      "condition": "locked_pilot_region",
+      "reason": "No permitted, contiguous pilot coverage confirmed"
+    },
+    {
+      "condition": "licensed_predictor_coverage",
+      "reason": "Fault geometry unavailable or license blocked; other layers partial"
+    },
+    {
+      "condition": "pu_background_protocol",
+      "reason": "No verified negatives and no approved PU design"
+    },
+    {
+      "condition": "preregistered_spatial_group_validation",
+      "reason": "Design requirement exists, no approved folds/exclusion buffer"
+    },
+    {
+      "condition": "sufficient_independent_groups",
+      "reason": "Effective independent sample size not validated"
+    },
+    {
+      "condition": "external_geographic_holdout",
+      "reason": "Geographically independent evaluation region not locked"
+    },
+    {
+      "condition": "rights_and_output_review",
+      "reason": "DMR geology redistribution and active-fault permission unresolved"
+    }
+  ],
+  "warning": "Passing a metadata gate is not model validity, training authorization, data-license clearance, or accuracy evidence. Independent review is mandatory."
+}

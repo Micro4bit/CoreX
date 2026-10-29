@@ -126,4 +126,39 @@ export interface MapPoint extends GeothermalRecord {
   latitude: number;
   isCoordinateReview: boolean;
   isProvisional: boolean;
+  environmentalTier?: EnvironmentalConstraintLevel;
+  explorationPriority?: ExplorationPriorityLevel;
+}
+
+export type EnvironmentalConstraintLevel =
+  | "CRITICAL_EXCLUSION"
+  | "CONDITIONAL_REVIEW"
+  | "MONITORED_FEASIBILITY"
+  | "NOT_EVALUATED";
+
+export type ExplorationPriorityLevel =
+  | "TIER_A_HIGH_EVIDENCE_FEASIBLE"
+  | "TIER_B_HIGH_EVIDENCE_ENVIRONMENTALLY_CONSTRAINED"
+  | "TIER_C_MODERATE_EVIDENCE_DATA_GAPS"
+  | "TIER_D_PROVISIONAL_UNRESOLVED_COORDINATES"
+  | "TIER_E_WITHHELD_FROM_EXPLORATION";
+
+export interface EnvironmentalScreeningRecord {
+  ruleId: string;
+  category: "PROTECTED_AREA" | "FOREST_AND_LAND_USE" | "WATERSHED_HEADWATER" | "GROUNDWATER_SENSITIVITY" | "COMMUNITY_BUFFER" | "INFRASTRUCTURE_PROXIMITY";
+  governingStatuteTh: string;
+  agency: string;
+  tier: EnvironmentalConstraintLevel;
+  descriptionTh: string;
+  status: string;
+}
+
+export interface DecisionSupportSummary {
+  systemId: string;
+  systemName: string;
+  priorityTier: ExplorationPriorityLevel;
+  environmentalTier: EnvironmentalConstraintLevel;
+  whyExplore: string;
+  evidenceReliability: string;
+  nextInvestigationActions: string[];
 }

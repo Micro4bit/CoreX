@@ -1,0 +1,108 @@
+{
+  "project": "GeoThermAI",
+  "phase": "2G",
+  "snapshot_date": "2026-10-29",
+  "origin": "PHASE2F2_ML_GATE_REPORT + PHASE2G_DATA_READINESS_AND_ENVIRONMENTAL_SCREENING",
+  "decision": "NO_GO_FOR_PREDICTIVE_ML",
+  "requirements_total": 9,
+  "conditions_blocked": 9,
+  "review_requirements": {
+    "labels_verified": {
+      "approved": false,
+      "why_blocked": "47 manifestation rows represent only 6–10 independent hydrothermal systems in North; 14 internally consistent, 31 provisional southern records excluded, 2 withheld (CR_02 UTM mismatch >1km, CM_16 missing DMS); expert hydrogeologist signoff pending",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "independent_groups_verified": {
+      "approved": false,
+      "why_blocked": "Independent hydrothermal system clustering unapproved by external hydrogeologists; co-withholding units unverified with documentary evidence",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "study_area_locked": {
+      "approved": false,
+      "why_blocked": "Candidate North AOI (98.0°–100.5° E, 17.0°–20.5° N) contains severe predictor gaps (Geodesic SRTM DEM 51.37%, DMR geology 44.73%, Combined overlap 33.80% over 102,125.39 km²); study area cannot be locked until missing tiles and quadrangles are acquired",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "predictors_licensed_and_covered": {
+      "approved": false,
+      "why_blocked": "DMR active fault reuse blocked due to conflicting Open Government vs non-commercial metadata; DMR 1:250k geology derivative release unconfirmed; 7 SRTM 1-degree elevation tiles missing",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "pu_background_protocol_approved": {
+      "approved": false,
+      "why_blocked": "Positive-Unlabeled background protocol preregistered, but no validated negatives exist; unobserved does not imply absence of blind geothermal systems",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "spatial_validation_preregistered": {
+      "approved": false,
+      "why_blocked": "Buffer sensitivity schedule preregistered (5, 10, 15, 20, 30 km); fixed 20 km assumption deprecated as provisional hypothesis",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "independent_validation_feasible": {
+      "approved": false,
+      "why_blocked": "Effective independent sample size is 6–10 systems; if expert review confirms <5 independent systems, EVALUATION_NOT_ESTIMABLE rule will be enforced",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "external_test_plan_approved": {
+      "approved": false,
+      "why_blocked": "No approved independent geographical external holdout with verified ground truth labels",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    },
+    "output_release_approved": {
+      "approved": false,
+      "why_blocked": "DMR derivative map publication and active fault commercial licensing unsettled; output restrictions unresolved",
+      "reviewer": "",
+      "evidence_uri": "",
+      "approved_on": ""
+    }
+  },
+  "runtime_enforcement": {
+    "predictive_model_fitting": "DISABLED",
+    "spatial_interpolation_rasters": "DISABLED",
+    "prospectivity_heatmap_rendering": "DISABLED",
+    "probability_or_drilling_success_claims": "FORBIDDEN",
+    "usgs_replication_sandbox": "ISOLATED_UNDER_USGS_REPLICATION_ONLY"
+  },
+  "geodesic_coverage_summary": {
+    "aoi_geodesic_area_km2": 102125.39,
+    "srtm_dem_geodesic_coverage_pct": 51.37,
+    "dmr_geology_geodesic_coverage_pct": 44.73,
+    "combined_predictors_geodesic_coverage_pct": 33.80,
+    "eligible_2km_grid_cells": 8630
+  },
+  "environmental_screening_status": {
+    "framework_rules_defined": 9,
+    "statutory_statutes": [
+      "National Parks Act B.E. 2562 (Sec. 19)",
+      "Wild Animal Conservation and Protection Act B.E. 2562 (Sec. 53-55)",
+      "Cabinet Resolutions on Watershed Classification (WSC 1A/1B/2)",
+      "National Reserved Forests Act B.E. 2507 (Sec. 16)",
+      "Groundwater Act B.E. 2520"
+    ],
+    "known_critical_exclusions": [
+      "Fang (Doi Pha Hom Pok National Park)",
+      "Pa Pae (Huai Nam Dang National Park)"
+    ],
+    "known_conditional_reviews": [
+      "Mae Chan (Outside National Park; Municipal land)",
+      "San Kamphaeng (Forest Reserve; Cooperative village)",
+      "Sop Pong / Wiang Pa Pao (Forest Reserve; Highway corridor)"
+    ]
+  },
+  "warning": "Passing metadata checks is not scientific validity. No predictive model will be trained or released until authorized external human experts provide primary documentary sign-offs for geology/fault licensing, independent system clustering, and holdout evaluation."
+}

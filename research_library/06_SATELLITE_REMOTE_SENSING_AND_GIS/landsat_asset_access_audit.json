@@ -1,0 +1,107 @@
+{
+  "executedAt": "2026-10-26T07:58:28Z",
+  "stacSource": "tasks/phase_1_data_acquisition_label_validation/northern_thailand_stac_items.json",
+  "stacItemCount": 2,
+  "attempts": [
+    {
+      "itemId": "LC09_L2SP_130048_20261016_20261021_02_T1_ST",
+      "asset": "MTL.json",
+      "declaredType": "application/json",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/048/LC09_L2SP_130048_20261016_20261021_02_T1/LC09_L2SP_130048_20261016_20261021_02_T1_MTL.json",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F048%252FLC09_L2SP_130048_20261016_20261021_02_T1%252FLC09_L2SP_130048_20261016_20261021_02_T1_MTL.json",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130048_20261016_20261021_02_T1_ST",
+      "asset": "lwir11",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/048/LC09_L2SP_130048_20261016_20261021_02_T1/LC09_L2SP_130048_20261016_20261021_02_T1_ST_B10.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F048%252FLC09_L2SP_130048_20261016_20261021_02_T1%252FLC09_L2SP_130048_20261016_20261021_02_T1_ST_B10.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130048_20261016_20261021_02_T1_ST",
+      "asset": "qa",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/048/LC09_L2SP_130048_20261016_20261021_02_T1/LC09_L2SP_130048_20261016_20261021_02_T1_ST_QA.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F048%252FLC09_L2SP_130048_20261016_20261021_02_T1%252FLC09_L2SP_130048_20261016_20261021_02_T1_ST_QA.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130048_20261016_20261021_02_T1_ST",
+      "asset": "qa_pixel",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/048/LC09_L2SP_130048_20261016_20261021_02_T1/LC09_L2SP_130048_20261016_20261021_02_T1_QA_PIXEL.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F048%252FLC09_L2SP_130048_20261016_20261021_02_T1%252FLC09_L2SP_130048_20261016_20261021_02_T1_QA_PIXEL.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130047_20261016_20261021_02_T1_ST",
+      "asset": "MTL.json",
+      "declaredType": "application/json",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/047/LC09_L2SP_130047_20261016_20261021_02_T1/LC09_L2SP_130047_20261016_20261021_02_T1_MTL.json",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F047%252FLC09_L2SP_130047_20261016_20261021_02_T1%252FLC09_L2SP_130047_20261016_20261021_02_T1_MTL.json",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130047_20261016_20261021_02_T1_ST",
+      "asset": "lwir11",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/047/LC09_L2SP_130047_20261016_20261021_02_T1/LC09_L2SP_130047_20261016_20261021_02_T1_ST_B10.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F047%252FLC09_L2SP_130047_20261016_20261021_02_T1%252FLC09_L2SP_130047_20261016_20261021_02_T1_ST_B10.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130047_20261016_20261021_02_T1_ST",
+      "asset": "qa",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/047/LC09_L2SP_130047_20261016_20261021_02_T1/LC09_L2SP_130047_20261016_20261021_02_T1_ST_QA.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F047%252FLC09_L2SP_130047_20261016_20261021_02_T1%252FLC09_L2SP_130047_20261016_20261021_02_T1_ST_QA.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    },
+    {
+      "itemId": "LC09_L2SP_130047_20261016_20261021_02_T1_ST",
+      "asset": "qa_pixel",
+      "declaredType": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "declaredUrl": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2026/130/047/LC09_L2SP_130047_20261016_20261021_02_T1/LC09_L2SP_130047_20261016_20261021_02_T1_QA_PIXEL.TIF",
+      "httpStatus": 200,
+      "finalUrl": "https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F130%252F047%252FLC09_L2SP_130047_20261016_20261021_02_T1%252FLC09_L2SP_130047_20261016_20261021_02_T1_QA_PIXEL.TIF",
+      "contentType": "text/html; charset=UTF-8",
+      "firstBytesHex": "3c21444f43545950452068746d6c3e0a",
+      "isTiffSignature": false,
+      "isHtml": true
+    }
+  ],
+  "usableRasterCount": 0,
+  "decision": "ACCESS_BLOCKED",
+  "accessExplanation": "The official landsatlook asset URLs redirect anonymous requests to EROS login HTML. Official AWS direct access uses a requester-pays bucket and requires AWS credentials. HTML is not saved or treated as raster data.",
+  "scientificBoundary": "Landsat surface temperature is land-surface temperature, not a direct reservoir-temperature measurement or geothermal anomaly proof."
+}

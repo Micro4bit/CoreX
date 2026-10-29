@@ -1,0 +1,17 @@
+{
+  "PHASE2D_DATA_READINESS.md": {
+    "sha256": "41c357f2917d0e24a54e1157e8faeb9d9f98457970de5c28b35d5052f08a37fc",
+    "bytes": 1851,
+    "basis": "user-provided report; repository source code NOT provided"
+  },
+  "PHASE2D_ML_GATE.md": {
+    "sha256": "7352548bbc8b2d175759c5a97784c43b4207dd0a4eb4b1dd763b41bea3ac2cfd",
+    "bytes": 1453,
+    "basis": "user-provided report; repository source code NOT provided"
+  },
+  "PHASE2E_IMPLEMENTATION_REPORT.md": {
+    "sha256": "b7630188170131faf79be14f33d0d1524edcc3fc43f3cbde3bd10e93650570bd",
+    "bytes": 9436,
+    "basis": "user-provided report; repository source code NOT provided"
+  }
+}

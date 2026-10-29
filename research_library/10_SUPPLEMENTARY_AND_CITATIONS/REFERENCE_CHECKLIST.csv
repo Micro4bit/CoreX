@@ -1,0 +1,13 @@
+reference_id,lead_author,year,short_title,doi_or_official_url,preferred_category,local_status
+R01,Mordensky et al.,2023,When less is more,10.1016/j.geothermics.2023.102662,01_GEOTHERMAL_FAVORABILITY_AND_PFA,NOT_CHECKED_LOCAL
+R02,Mordensky et al.,2025,Favorability mapping for hydrothermal power resource assessments of the Great Basin USA,10.1016/j.geothermics.2025.103450,01_GEOTHERMAL_FAVORABILITY_AND_PFA,NOT_CHECKED_LOCAL
+R03,DeAngelo et al.,2024,Geothermal Play Fairway Analysis Part 2 GIS methodology,10.1016/j.geothermics.2023.102882,01_GEOTHERMAL_FAVORABILITY_AND_PFA,NOT_CHECKED_LOCAL
+R04,AlGaiar et al.,2024,Applications of artificial intelligence in geothermal resource exploration,10.1002/dug2.12122,02_AI_ML_AND_STATISTICAL_METHODS,NOT_CHECKED_LOCAL
+R05,Phiranram et al.,2026,Geophysical Investigation of Geothermal Potential in Southern Thailand,10.1029/2025EA004686,04_THAILAND_GEOSCIENCE_AND_GEOPHYSICS,NOT_CHECKED_LOCAL
+R06,Roberts et al.,2017,Cross-validation strategies for data with spatial hierarchical temporal or phylogenetic structure,10.1111/ecog.02881,03_SPATIAL_CV_PU_AND_UNCERTAINTY,NOT_CHECKED_LOCAL
+R07,Valavi et al.,2019,blockCV spatially or environmentally separated folds,10.1111/2041-210X.13107,03_SPATIAL_CV_PU_AND_UNCERTAINTY,NOT_CHECKED_LOCAL
+R08,Bekker and Davis,2020,Learning from positive and unlabeled data a survey,10.1007/s10994-020-05877-5,03_SPATIAL_CV_PU_AND_UNCERTAINTY,NOT_CHECKED_LOCAL
+R09,USGS,2023,USGS data release for Mordensky 2023,10.5066/P9V1Q9XM,10_SUPPLEMENTARY_AND_CITATIONS,NOT_CHECKED_LOCAL
+R10,IEA,2024,The Future of Geothermal Energy,https://www.iea.org/reports/the-future-of-geothermal-energy,07_ENERGY_POLICY_PDP2026_AND_DATACENTER,NOT_CHECKED_LOCAL
+R11,EPPO,2026,Thailand draft PDP2026 official documentation,https://www.eppo.go.th/,07_ENERGY_POLICY_PDP2026_AND_DATACENTER,NOT_CHECKED_LOCAL
+R12,BOI,2026,Data Center AI investment Thailand official announcements,https://www.boi.go.th/,07_ENERGY_POLICY_PDP2026_AND_DATACENTER,NOT_CHECKED_LOCAL
